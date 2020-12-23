@@ -13,7 +13,7 @@ public class IntegerFlip {
 
     public static int reverse(int x) {
 
-        
+
         return 1;
     }
 }

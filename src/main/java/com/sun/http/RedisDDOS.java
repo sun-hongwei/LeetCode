@@ -2,7 +2,7 @@ package com.sun.http;
 
 import redis.clients.jedis.Jedis;
 
-public class RedisDDOS implements Runnable{
+public class RedisDDOS implements Runnable {
 
     @Override
     public void run() {
@@ -12,15 +12,15 @@ public class RedisDDOS implements Runnable{
         jedis.auth("112233");
 
         for (int i = 0; i < 1000000; i++) {
-            jedis.set(Thread.currentThread().getName()+i, "xinxin"+i);//向key-->name中放入了value-->xinxin
-            System.out.println(Thread.currentThread().getName()+i);
+            jedis.set(Thread.currentThread().getName() + i, "xinxin" + i);//向key-->name中放入了value-->xinxin
+            System.out.println(Thread.currentThread().getName() + i);
         }
         System.out.println("刷新完成");
     }
 }
 
 
-class Main2{
+class Main2 {
     public static void main(String[] args) {
 
         for (int i = 0; i < 1000; i++) {

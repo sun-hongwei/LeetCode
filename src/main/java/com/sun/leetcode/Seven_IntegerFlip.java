@@ -3,7 +3,7 @@ package com.sun.leetcode;
 /**
  * LeetCode 第七题 整数翻转
  */
-public class IntegerFlip {
+public class Seven_IntegerFlip {
 
     public static void main(String[] args) {
         int x = 123;

@@ -3,7 +3,7 @@ package com.sun.leetcode;
 /**
  * LeetCode 第一题 两数之和
  */
-public class SumOfTwoNumbers {
+public class One_SumOfTwoNumbers {
 
     public static void main(String[] args) {
 

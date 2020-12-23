@@ -2,7 +2,7 @@ package com.sun.http;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Main implements Runnable {
+public class HttpDDOS implements Runnable {
 
     private static AtomicInteger atomicInteger = new AtomicInteger();
 
@@ -22,7 +22,7 @@ class Main1 {
     public static void main(String[] args) {
 
         for (int i = 0; i < 2000; i++) {
-            Main main = new Main();
+            HttpDDOS main = new HttpDDOS();
             Thread thread = new Thread(main);
             thread.start();
         }

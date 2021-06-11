@@ -4,7 +4,7 @@ package com.sun.thread;
 import java.util.HashSet;
 
 public class Test {
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         Integer integer = new Integer(0);
         HashSet set = new HashSet();
         set.add(2);
@@ -15,5 +15,11 @@ public class Test {
         }
         System.out.println(set.size());
         System.out.println(integer);
+    }
+
+    public static void main(String[] args) {
+        for(;;){
+            System.out.println(1);
+        }
     }
 }

@@ -6,15 +6,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-/**
- * @author:xxx
- * @TODO:使用callable进行自增
- */
 public class AddCallable {
 
     public static void main(String[] args) {
         long begin = System.currentTimeMillis();
-        ExecutorService threadPool = Executors.newCachedThreadPool();
+        ExecutorService threadPool = Executors.newFixedThreadPool(2);
         AddTask task01 = new AddTask("Task-01", 1, 50);
         AddTask task02 = new AddTask("Task-02", 51, 100);
         //得到的结果集
@@ -33,10 +29,6 @@ public class AddCallable {
     }
 };
 
-/**
- * @author:xxx
- * @TODO:泛型中的Long表示返回的类型
- */
 class AddTask implements Callable<Long> {
     private String name;
     private long begin;

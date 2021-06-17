@@ -8,14 +8,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @ProjectName:Skeleton
- * @PackageName:com.comtop.test
- * @Verson :0.1
- * @CreateUser :lanweixing
- * @CreateDate :2014-9-3上午9:41:16
- * @UseFor :
- */
 public class DoThread {
 
     public static void main(String[] args) {

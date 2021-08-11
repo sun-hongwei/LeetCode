@@ -5,6 +5,6 @@
 JNIEXPORT void JNICALL Java_com_sun_jni_HelloWorld_sayHello
 (JNIEnv *env, jobject obj)
 {
-    printf("Hello world ! \n");
+    printf("Hello world");
     return;
 }

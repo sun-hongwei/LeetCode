@@ -14,6 +14,9 @@ public class HelloWorld {
      *    MacOS:
      *    gcc -shared -dynamiclib -I /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/
      *    JavaVM.framework/Versions/A/Headers -o libHelloWorld.dylib jni_helloworldImpl.cpp
+     *
+     *    Windows：
+     *    dll 文件，没有Windows环境
      */
 
     {

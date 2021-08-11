@@ -11,7 +11,7 @@ public class HelloWorld {
      *    g++ -shared -I /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/
      *    JavaVM.framework/Versions/A/Headers jni_helloworldImpl.cpp -o Helloworld.so
      *
-     *    MACOS:
+     *    MacOS:
      *    gcc -shared -dynamiclib -I /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/
      *    JavaVM.framework/Versions/A/Headers -o libHelloWorld.dylib jni_helloworldImpl.cpp
      */

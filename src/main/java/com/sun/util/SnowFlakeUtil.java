@@ -14,7 +14,7 @@ public class SnowFlakeUtil {
 
     static {
         snowFlakeUtil = new SnowFlakeUtil();
-        System.out.println("222222");
+        System.out.println("222222222222222");
     }
 
     // 初始时间戳(纪年)，可用雪花算法服务上线时间戳的值
